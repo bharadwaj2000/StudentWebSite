@@ -1,0 +1,53 @@
+use studentinfo;
+
+drop table studentlogin;
+create table studentlogin(
+	pin bigint,
+    pass varchar(20) 
+);
+insert into studentlogin values(221710308062,"123456789");
+ 
+ 
+
+select * from studentlogin;
+
+drop table stafflogin;
+create table stafflogin(
+	pin bigint,
+    pass varchar(20),
+    section int(5)
+);
+
+insert into stafflogin values(200313,"123456789",8);
+
+select * from stafflogin;
+
+create table studentdetails(
+	pin bigint,
+    studentname varchar(20),
+    section int(5),
+    cgpa float,
+    attendance float
+);
+
+insert into studentdetails values(221710308062,"Pavan Kumar",8,9.4,75.0);
+
+select * from studentdetails;
+
+drop table messages;
+create table messages(
+	id int primary key auto_increment,
+	message varchar(200),
+    uploaded datetime
+);
+
+
+
+create table staffdetails(
+	pin bigint,
+    staffname varchar(20),
+    section int(5)
+);
+
+select * from stafflogin;
+insert into staffdetails values(200313,"Bharadwaj",8);
