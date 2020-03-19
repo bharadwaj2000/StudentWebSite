@@ -1,0 +1,21 @@
+body{
+    background-color:lightcyan;
+}
+.main{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_div{
+    width: 70%;
+    margin: 0 auto;
+}
+
+h2{
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
